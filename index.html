@@ -1,171 +1,163 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raihan Faisal Ramdani - Front End Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-<!-- Header / Navbar -->
-<header class="header">
-    <div class="container">
-        <div class="logo">
-            <!-- Menggunakan ikon payung Font Awesome -->
-            <i class="fas fa-umbrella"></i> <!-- Ikon payung -->
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#testimonials">Testimoni</a></li>
-                <li><a href="#project">Project</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <!DOCTYPE html>
+    <html lang="id">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Raihan Faisal Ramdani - Front End Developer</title>
+            <link rel="stylesheet" href="styles.css">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+            <script src="script.js"></script>
+        </head>
+        <body>
 
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-umbrella"></i>
+                </div>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Yahoo!!!</h1>
-                <h2>Saya Raihan Faisal Ramdani</h2>
-                <p>Saya adalah Mahasiswa semester 4 di Universitas Siliwangi mempunyai keahlian sebagai Front End Developer dan UI/UX Design. Pengalaman saya dalam bidang ini lebih mengarah ke Front End Developer saya harap dengan keahlian saya bisa memberikan yang terbaik apabila kita bekerja sama.</p>
-                <!-- Added Text for Social Links -->
-                <div class="social-links">
-                    <p>Touch me on:</p>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="mailto:someone@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <nav class="nav" id="nav-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#testimonials">Testimoni</a></li>
+                        <li><a href="#project">Project</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Yahoo!!!</h1>
+                    <h2>Saya Raihan Faisal Ramdani</h2>
+                    <p>Saya adalah Mahasiswa semester 4 di Universitas Siliwangi mempunyai keahlian sebagai Front End Developer dan UI/UX Design. Pengalaman saya dalam bidang ini lebih mengarah ke Front End Developer saya harap dengan keahlian saya bisa memberikan yang terbaik apabila kita bekerja sama.</p>
+                    <div class="social-links">
+                        <p>Touch me on:</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="mailto:someone@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="profile-image.jpg" alt="Raihan Faisal Ramdani">
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="service">
+            <div class="container">
+                <h2>Service</h2>
+                <p class="service-description">
+                    Dalam perkuliahan saya, saya sudah mengerjakan beberapa project yang dimana saya berfokus pada Front End Development dan juga UI/UX Designer. Project-Project tersebut mengajarkan saya bagaimana bertanggung jawab terhadap pekerjaan yang nantinya akan saya jalani.
+                </p>
+
+                <div class="service-items">
+                    <div class="service-item">
+                        <div class="service-text">
+                            <h3>UI/UX</h3>
+                            <p>3 Projects completed</p>
+                        </div>
+                        <div class="service-img-container">
+                            <img src="uiux-image.jpg" alt="UI/UX" class="service-img">
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-text">
+                            <h3>FE Developer</h3>
+                            <p>2 Projects completed</p>
+                        </div>
+                        <div class="service-img-container">
+                            <img src="fe-dev-image.jpg" alt="Front End Developer" class="service-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools">
+                    <h3>Tools:</h3>
+                    <div class="tools-icons">
+                        <a href="#" class="tool-icon">
+                            <i class="fab fa-html5"></i>
+                        </a>
+                        <a href="#" class="tool-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </a>
+                        <a href="#" class="tool-icon">
+                            <i class="fab fa-react"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="profile-image.jpg" alt="Raihan Faisal Ramdani">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Service Section -->
-    <section id="service" class="service">
-        <div class="container">
-            <!-- Teks h2 Service di atas teks deskripsi dan card -->
-            <h2>Service</h2>
-            <p class="service-description">
-                Dalam perkuliahan saya, saya sudah mengerjakan beberapa project yang dimana saya berfokus pada Front End Development dan juga UI/UX Designer. Project-Project tersebut mengajarkan saya bagaimana bertanggung jawab terhadap pekerjaan yang nantinya akan saya jalani.
-            </p>
-
-            <!-- Service Items Row -->
-            <div class="service-items">
-                <div class="service-item">
-                    <div class="service-text">
-                        <h3>UI/UX</h3>
-                        <p>3 Projects completed</p>
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What They Tell About Me</h2>
+                <div class="testimonials-items">
+                    <div class="testimonial-item">
+                        <i class="fas fa-user-circle"></i>
+                        <p>"Hasil kerjanya sangat rapi saya suka!"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                    <div class="service-img-container">
-                        <img src="uiux-image.jpg" alt="UI/UX" class="service-img"> <!-- Gambar untuk UI/UX -->
+                    <div class="testimonial-item">
+                        <i class="fas fa-user-circle"></i>
+                        <p>"Desainnya sangat enak di pandang oleh mata"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <i class="fas fa-user-circle"></i>
+                        <p>"Hasilnya sesuai dengan waktu yang di sepakati"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="service-item">
-                    <div class="service-text">
-                        <h3>FE Developer</h3>
-                        <p>2 Projects completed</p>
+            </div>
+        </section>
+
+        <section id="project" class="project">
+            <div class="container">
+                <h2>Project</h2>
+                <p>dibawah ini adalah berbagai project yang sudah saya kerjakan sebagai UI/UX Designer dan juga sebagai Front End Developer.</p>
+
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Cerdas Bersama Musik" class="project-img">
+                    <div class="project-info">
+                        <h3>Cerdas Bersama Musik</h3>
+                        <p>Pada proyek ini saya memiliki role Front End Developer</p>
                     </div>
-                    <div class="service-img-container">
-                        <img src="fe-dev-image.jpg" alt="Front End Developer" class="service-img"> <!-- Gambar untuk FE Developer -->
-                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Tools Section -->
-            <div class="tools">
-                <h3>Tools:</h3>
-                <div class="tools-icons">
-                    <a href="#" class="tool-icon">
-                        <i class="fab fa-html5"></i>
-                    </a>
-                    <a href="#" class="tool-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </a>
-                    <a href="#" class="tool-icon">
-                        <i class="fab fa-react"></i>
-                    </a>
-                </div>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Raihan Faisal Ramdani</p>
             </div>
-        </div>
-    </section>
-
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials">
-    <div class="container">
-        <h2>What They Tell About Me</h2>
-        <div class="testimonials-items">
-            <div class="testimonial-item">
-                <i class="fas fa-user-circle"></i>  <!-- Ikon pengguna -->
-                <p>"Hasil kerjanya sangat rapi saya suka!"</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i> <!-- 5 bintang rating -->
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <i class="fas fa-user-circle"></i>  <!-- Ikon pengguna -->
-                <p>"Desainnya sangat enak di pandang oleh mata"</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i> <!-- 5 bintang rating -->
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <i class="fas fa-user-circle"></i>  <!-- Ikon pengguna -->
-                <p>"Hasilnya sesuai dengan waktu yang di sepakati"</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i> <!-- 5 bintang rating -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Project Section -->
-<section id="project" class="project">
-    <div class="container">
-        <h2>Project</h2>
-        <p>dibawah ini adalah berbagai project yang sudah saya kerjakan sebagai UI/UX Designer 
-dan juga sebagai Front End Developer .</p>
-
-        <!-- Satu Project Item -->
-        <div class="project-item">
-            <img src="project1.jpg" alt="Cerdas Bersama Musik" class="project-img">
-            <div class="project-info">
-                <h3>Cerdas Bersama Musik</h3>
-                <p>Pada proyek ini saya memiliki role Front End Developer</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-        <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Raihan Faisal Ramdani</p>
-        </div>
-    </footer>
-</body>
-</html>
+        </footer>
+    </body>
+    </html>
