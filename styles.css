@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
 }
 
-/* Header */
+/* Navbar */
 .header {
     background-color: #ffff;
     padding: 20px 0;
@@ -24,36 +24,54 @@ body {
     top: 0;
     z-index: 1000;
 }
+
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .nav ul {
     display: flex;
     list-style: none;
 }
+
 .nav ul li {
     margin-right: 20px;
 }
+
 .nav ul li a {
     color: #131312;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger-line {
+    width: 30px;
+    height: 4px;
+    background-color: #131312;
+    border-radius: 5px;
+}
+
 /* Logo di navbar */
 .header .logo i {
-    font-size: 2.5rem;  /* Ukuran ikon payung */
-    color: #131312;  /* Warna ikon */
+    font-size: 2.5rem;
+    color: #131312;
     transition: color 0.3s ease;
 }
 
-/* Mengubah warna ikon saat hover */
 .header .logo i:hover {
-    color: #a4c400;  /* Warna ikon saat hover */
+    color: #a4c400;
 }
-
 
 /* Hero Section */
 .hero {
@@ -66,18 +84,18 @@ body {
 
 .hero-content {
     display: flex;
-    justify-content: flex-start; /* Memastikan konten tetap rata kiri */
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-    padding: 0 50px; /* Memberikan padding kiri dan kanan agar tidak terlalu mepet */
+    padding: 0 50px;
 }
 
 .hero-text {
     flex: 1;
     padding: 20px;
     max-width: 50%;
-    text-align: left; /* Menjaga teks tetap rata kiri */
+    text-align: left;
 }
 
 .hero-text h1 {
@@ -101,7 +119,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px; /* Memberi jarak antar teks dan ikon */
+    gap: 5px;
 }
 
 .social-links p {
@@ -110,22 +128,21 @@ body {
     font-size: 18px;
 }
 
-/* Social Icons */
 .social-icons {
     display: flex;
     justify-content: flex-start;
-    gap: 15px; /* Memberi jarak antar ikon */
+    gap: 15px;
 }
 
 .social-icon {
-    color: #a4c400;  /* Sesuaikan dengan warna desain */
-    font-size: 30px;  /* Ukuran ikon diperbesar */
-    text-decoration: none; /* Menghilangkan garis bawah */
-    transition: color 0.3s ease; /* Efek transisi saat hover */
+    color: #a4c400;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #fff;  /* Warna saat hover */
+    color: #fff;
 }
 
 .hero-image {
@@ -140,172 +157,6 @@ body {
     height: 250px;
     object-fit: cover;
 }
-
-
-/* Social Links */
-.social-links {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px; /* Memberi jarak antar teks dan ikon */
-}
-
-.social-links p {
-    color: #fff;
-    margin: 0;
-    font-size: 18px;
-}
-
-/* Social Icons */
-.social-icons {
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px; /* Memberi jarak antar ikon */
-}
-
-.social-icon {
-    color: #a4c400;  /* Sesuaikan dengan warna desain */
-    font-size: 30px;  /* Ukuran ikon diperbesar */
-    text-decoration: none; /* Menghilangkan garis bawah */
-    transition: color 0.3s ease; /* Efek transisi saat hover */
-}
-
-.social-icon:hover {
-    color: #fff;  /* Warna saat hover */
-}
-
-.hero-image {
-    flex: 1;
-    text-align: center;
-    max-width: 50%;
-}
-
-.hero-image img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover; /* Menjaga gambar agar proporsional dan tidak terdistorsi */
-}
-
-
-/* Social Links */
-.social-links {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px; /* Memberi jarak antar teks dan ikon */
-    justify-content: flex-start;
-}
-
-.social-links p {
-    color: #fff;
-    margin: 0;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 18px;
-}
-
-.social-icon {
-    color: #a4c400;  /* Sesuaikan dengan warna desain */
-    font-size: 30px;  /* Ukuran ikon diperbesar */
-    text-decoration: none; /* Menghilangkan garis bawah */
-    transition: color 0.3s ease; /* Efek transisi saat hover */
-}
-
-.social-icon:hover {
-    color: #fff;  /* Warna saat hover */
-}
-
-.hero-image {
-    flex: 1;
-    text-align: center;
-    max-width: 40%;  /* Mengurangi lebar gambar untuk memberi ruang pada teks dan social links */
-}
-
-.hero-image img {
-    border-radius: 50%;
-    width: 250px;  /* Memperbesar ukuran gambar */
-    height: 250px; /* Memperbesar ukuran gambar */
-    object-fit: cover; /* Menjaga gambar agar proporsional dan tidak terdistorsi */
-}
-
-
-/* Social Links */
-.social-links {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px; /* Memberi jarak antar teks dan ikon */
-    justify-content: flex-start;
-}
-
-.social-links p {
-    color: #fff;
-    margin: 0;
-    font-size: 18px;
-}
-
-.social-icon {
-    color: #a4c400;  /* Sesuaikan dengan warna desain */
-    font-size: 30px;  /* Ukuran ikon diperbesar */
-    text-decoration: none; /* Menghilangkan garis bawah */
-    transition: color 0.3s ease; /* Efek transisi saat hover */
-}
-
-.social-icon:hover {
-    color: #fff;  /* Warna saat hover */
-}
-
-.hero-image {
-    flex: 1;
-    text-align: center;
-    max-width: 50%;
-}
-
-.hero-image img {
-    border-radius: 50%;
-    width: 300px;  /* Memperbesar ukuran gambar */
-    height: 300px; /* Memperbesar ukuran gambar */
-    object-fit: cover; /* Menjaga gambar agar proporsional dan tidak terdistorsi */
-}
-
-
-/* Social Links */
-.social-links {
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-end; /* Mengarahkan social links ke kanan */
-    gap: 15px; /* Memberi jarak antar ikon */
-    width: 100%; /* Pastikan lebar cukup untuk mengarahkannya ke kanan */
-}
-
-.social-icon {
-    color: #a4c400;  /* Sesuaikan dengan warna desain */
-    font-size: 24px;
-    text-decoration: none; /* Menghilangkan garis bawah */
-    transition: color 0.3s ease; /* Efek transisi saat hover */
-}
-
-.social-icon:hover {
-    color: #fff;  /* Warna saat hover */
-}
-
-.hero-image {
-    flex: 1;
-    text-align: center;
-    max-width: 50%;
-}
-
-.hero-image img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover; /* Menjaga gambar agar proporsional dan tidak terdistorsi */
-}
-
 
 /* Service Section */
 .service {
@@ -324,9 +175,9 @@ body {
 .service-description {
     font-size: 1.2rem;
     color: #ccc;
-    margin-bottom: 30px; /* Memberikan jarak antara paragraph dan card */
-    max-width: 800px; /* Mengatur lebar agar tidak terlalu panjang */
-    margin: 0 auto; /* Membuatnya rata tengah */
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Service Section */
@@ -349,8 +200,8 @@ body {
     color: #ccc;
     margin-bottom: 30px;
     max-width: 800px;
-    text-align: left;  /* Menjaga teks rata kiri */
-    width: 50%;  /* Mengatur lebar teks di samping card */
+    text-align: left;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -359,7 +210,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;  /* Membuatnya wrap di layar kecil */
+    flex-wrap: wrap;
 }
 
 /* Service Item */
@@ -379,7 +230,7 @@ body {
 
 /* Menambahkan gaya untuk gambar dalam service-item */
 .service-img-container {
-    width: 45%;  /* Lebar gambar pada desktop */
+    width: 45%;
     text-align: center;
 }
 
@@ -440,40 +291,6 @@ body {
     font-size: 3rem;
 }
 
-
-
-/* Tools Section */
-.tools {
-    margin-top: 30px;
-}
-
-.tools h3 {
-    font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.tools-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    font-size: 2rem; /* Ukuran ikon lebih besar */
-}
-
-.tool-icon {
-    color: #a4c400; /* Sesuaikan dengan warna desain */
-    text-decoration: none;
-    transition: color 0.3s ease; /* Efek transisi saat hover */
-}
-
-.tool-icon:hover {
-    color: #fff; /* Warna ikon saat hover */
-}
-
-.tool-icon i {
-    font-size: 3rem; /* Ukuran ikon */
-}
-
 /* Testimonials Section */
 .testimonials {
     padding: 60px 0;
@@ -500,39 +317,37 @@ body {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
-    width: 30%;  /* Mengatur lebar item testimonial */
+    width: 30%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: center;
     font-style: italic;
-    margin-bottom: 40px; /* Memberikan jarak antar testimonial */
+    margin-bottom: 40px;
 }
 
-/* Ikon Pengguna */
 .testimonial-item i {
-    font-size: 40px;  /* Ukuran ikon pengguna */
-    color: #131312;   /* Warna ikon */
-    margin-bottom: 20px;  /* Memberikan jarak antara ikon dan kutipan */
+    font-size: 40px;
+    color: #131312;
+    margin-bottom: 20px;
 }
 
-/* Menata kutipan dan rating bintang */
 .testimonial-item p {
     font-size: 1.1rem;
     color: #131312;
-    margin-bottom: 10px; /* Memberikan jarak antara kutipan dan rating */
+    margin-bottom: 10px;
 }
 
 .testimonial-item .stars {
-    font-size: 1.5rem;  /* Ukuran bintang */
-    color: #f39c12;     /* Warna bintang */
+    font-size: 1.5rem;
+    color: #f39c12;
 }
 
 .testimonial-item .stars i {
-    margin-right: 5px;  /* Memberikan jarak antar bintang */
+    margin-right: 5px;
 }
 
 .testimonial-item:hover {
-    transform: translateY(-10px); /* Efek hover untuk card testimonial */
+    transform: translateY(-10px);
 }
 
 .testimonial-item:last-child {
@@ -556,7 +371,7 @@ body {
 .project p {
     font-size: 1.2rem;
     color: #fff;
-    margin-bottom: 80px; /* Menambahkan jarak bawah antara teks dan card proyek */
+    margin-bottom: 80px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -565,22 +380,20 @@ body {
 .project-item {
     background-color: #131312;
     border-radius: 10px;
-    width: 100%;  /* Membuat card mengambil lebar penuh */
+    width: 100%;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     margin-bottom: 20px;
 }
 
-/* Gambar di dalam project-item */
 .project-img {
     width: 100%;
-    height: 100%;  /* Membesarkan gambar agar memenuhi section */
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px 10px 0 0; /* Sudut melengkung pada gambar */
+    border-radius: 10px 10px 0 0;
 }
 
-/* Info di bawah gambar */
 .project-info {
     padding: 20px;
 }
@@ -597,11 +410,9 @@ body {
     color: #ccc;
 }
 
-/* Hover effect untuk card proyek */
 .project-item:hover {
     transform: translateY(-10px);
 }
-
 
 /* Footer */
 .footer {
@@ -613,45 +424,42 @@ body {
 .footer p {
     font-size: 1rem;
     color: #131312;
-    margin-bottom: 0;  /* Menghapus margin bawah agar tidak ada jarak tambahan */
-    text-align: center;  /* Menjaga teks tetap terpusat */
+    margin-bottom: 0;
+    text-align: center;
 }
 
-
-/* Responsive Design untuk footer pada perangkat kecil */
 @media screen and (max-width: 768px) {
     .footer .social-links {
-        flex-direction: column;  /* Menyusun link sosial menjadi kolom di perangkat kecil */
-        align-items: center;  /* Menjaga link sosial tetap terpusat */
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer .social-links a {
-        font-size: 1.5rem;  /* Meningkatkan ukuran font untuk link sosial di perangkat kecil */
+        font-size: 1.5rem;
     }
 }
 
-
-
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
     }
+
     .hero-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .hero-text {
         max-width: 100%;
     }
+
     .social-links {
-        align-items: center; /* Social links ada di tengah bawah di mobile */
+        align-items: center;
     }
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .service-items {
         flex-direction: column;
@@ -679,7 +487,6 @@ body {
     }
 }
 
-/* Responsiveness untuk testimonial pada perangkat kecil */
 @media screen and (max-width: 768px) {
     .testimonials-items {
         flex-direction: column;
@@ -687,24 +494,59 @@ body {
     }
 
     .testimonial-item {
-        width: 80%; /* Lebar testimonial lebih besar di perangkat kecil */
+        width: 80%;
     }
 }
 
-/* Responsiveness untuk project pada perangkat kecil */
 @media screen and (max-width: 768px) {
     .project-item {
         width: 100%;
     }
 
     .project-img {
-        height: 300px;  /* Menyesuaikan gambar agar lebih kecil di perangkat mobile */
+        height: 300px;
     }
 }
 
-/* Responsiveness untuk footer pada perangkat kecil */
 @media screen and (max-width: 768px) {
     .footer p {
-        font-size: 1.2rem;  /* Meningkatkan ukuran font sedikit di perangkat kecil */
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: #fff;
+        transition: 0.3s ease;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav.show {
+        right: 0;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav ul li a {
+        color: #000;
     }
 }
